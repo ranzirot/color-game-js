@@ -1,0 +1,117 @@
+body {
+	background-color: #2b2b2b;
+}
+
+.container {
+	height: 100vh;
+	text-align: center;
+}
+
+
+/* == Start of Spinner == */
+.spinner-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -50px;
+	width: 60px;
+	height: 60px;
+	-webkit-animation: sk-rotate 1.2s infinite linear;
+  animation: sk-rotate 1.2s infinite linear;
+}
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #0cffff;
+  border-radius: 100%;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+/* == End of Spinner == */
+
+
+/* == Timer Styles == */
+.score {
+	font-size: 4em;
+	font-weight: 300;
+	color: #0cffff;
+}
+
+.top {
+	margin-top: 2%;
+}
+
+.center {
+  line-height: 100px;
+  height: 100px;
+}
+
+.progress {
+	margin: 7.55% 0;
+	height: 20px !important;
+}
+
+.play-stop {
+	width: 16.67% !important;
+	margin-top: 4px;
+}
+
+.card-me {
+	width: 100% !important;
+	margin-top: -20px;
+}
+
+.the-word {
+	font-size: 9em;
+	font-weight: 500;
+}
+
+.text-me {
+	padding: 0 18%;
+}
+
+.input-field {
+	background-color: #27556a26;
+}
+
+.guess-word {
+	text-align: center;
+	font-size: 2em !important;
+	font-weight: 300;
+	color: #fff;
+}
+
+.card-panel {
+	min-height: 250px;
+}
